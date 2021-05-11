@@ -14,7 +14,7 @@ rightContent.addEventListener('click', e => {
     container.style.opacity = '0';
 
     setTimeout(() => {
-        document.location.href = './html/test.html';
+        document.location.href = './html/kyoto.html';
     }, 1000);
 });
 
