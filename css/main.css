@@ -1,3 +1,9 @@
+:root {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    --font-white: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +66,7 @@ header {
 
 header .nav-bar {
     font-size: 3rem;
-    color: #fff;
+    color: var(--font-white-);
     display: flex;
     justify-content: space-between;
     margin: 0 10vw;
@@ -118,8 +124,9 @@ img {
 
 .content {
     text-align: center;
-    color: white;
+    color: var(--font-white);
     font-size: 5vw;
+    font-weight: 500;
     position: absolute;
     top: 50%;
     left: 50%;
