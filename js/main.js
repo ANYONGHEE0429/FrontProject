@@ -3,10 +3,11 @@ const rightContent = document.querySelector('.right-div');
 const container = document.querySelector('.container');
 
 leftContent.addEventListener('click', e => {
+
     container.style.opacity = '0';
 
     setTimeout(() => {
-        document.location.href = './html/test.html';
+        document.location.href = './html/osaka.html';
     }, 1000);
 });
 
