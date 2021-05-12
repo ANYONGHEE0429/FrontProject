@@ -1,8 +1,10 @@
-const container = document.querySelector('.container');
+const mainContent = document.querySelector('.main-content');
+const title = document.querySelector('.first-warpper-title');
 
-
-window.addEventListener('load', function(e) {
-    
-    container.style.opacity = '1';
-
-});
+new ScrollMagic
+    .Scene({
+        triggerElement: mainContent,
+        triggerHook: .5
+    })
+    .setClassToggle(title, 'show')
+    .addTo(new ScrollMagic.Controller());
