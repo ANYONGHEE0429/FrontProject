@@ -67,6 +67,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 /* HEADER END */
 
@@ -76,7 +77,7 @@ section {
     height: 100vh;
 }
 .main-view-wrapper {
-    background-image: url(../image/doongs.jpeg);
+    background-image: url(../image/dog.gif);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -101,8 +102,8 @@ section {
     border: 2px solid #fff;
     box-shadow: 1px 1px 1px #fff;
 }
-.first-wrapper { background-color: green;}
-.second-wrapper { background-color: yellow;}
+.first-wrapper { background-color: rgb(216, 248, 216);}
+.second-wrapper { background-color: rgb(244, 244, 212);}
 /* SECTION END */
 
 /* CONTENT START */
