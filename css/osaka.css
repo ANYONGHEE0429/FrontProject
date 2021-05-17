@@ -32,116 +32,11 @@ a:focus {
 /* INIT END */
 
 /* MAIN VIEW START */
-.first-warpper {
-    
-}
+
 /* MAIN VIEW END */
 
 /* CONTENT SECTION START */
-.main-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;   
-}
-.left-content h3 {
-    text-align: center;
-    font-size: 10vw;
-    padding: 1.5rem 0;
-}
-.left-content p {
-    width: 85%;
-    font-size: 1.3rem;
-    line-height: 150%;
-    margin: 0 auto;
-    padding-bottom: 4rem;
-}
-.right-content .right-content-container .card {
-    width: 100vw;
-    height: 400px;
-    overflow: hidden;
-}
-.right-content .right-content-container .card .card-container {
-    width: 100%;
-    height: 350px;
-    position: relative;
-}
-.right-content .right-content-container .card .card-container .card-image-anchor {
-    position: absolute;
-    border-radius: 20px;
-    top: 1.5rem;
-    bottom: 1.5rem;
-    left: 1.5rem;
-    right: 1.5rem;
-    overflow: hidden;
-    transition: .4s;
-}
-.right-content .right-content-container .card .card-container .card-image-anchor:hover {
-    margin: -1rem;
-    border-width: 2px;
-}
-.right-content .right-content-container .card .card-container .card-image-anchor .card-image-anchor-cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-.right-content .right-content-container .card .desc {
-    font-size: 2.2rem;
-    /* padding: .3rem 0 0 0; */
-    text-align: center;
-}
 /* CONTENT SECTION END */
 
 /* MEDIA QUERY START */
-@media (min-width: 1024px) {
-    .main-content {
-        flex-direction: row;
-    }
-    .left-content {
-        flex: .5;
-        display: flex;
-        flex-direction: column;
-    }
-    .right-content {
-        flex: 1.5;
-        padding-left: 30px;
-    }
-    .right-content .right-content-container {
-        width: 90%;
-        position: relative;
-    }
-    .right-content .right-content-container::before {
-        content: '';
-        position: absolute;
-        box-sizing: border-box;
-        top: 0;
-        right: 7px;
-        border: 3px solid black;
-        border-radius: 5px;
-        height: 100%;
-    }
-    .right-content .right-content-container .card {
-        width: 50%;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    .right-content .right-content-container .card .card-container {
-        width: 100%;
-        height: 350px;
-        position: relative;
-    }
-    .right-content .right-content-container .card::before {
-        content: '';
-        box-sizing: border-box;
-        border: 5px solid black;
-        border-radius: 50%;
-        padding: 5px;
-        position: absolute;
-        top: 50%;
-        right: 0px;
-    }
-}
 /* MEDIA QUERY END */
