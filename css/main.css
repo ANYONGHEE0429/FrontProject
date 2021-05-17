@@ -54,6 +54,7 @@ a:focus {
 .main .header-title {
     font-size: 2rem;
     text-align: center;
+    cursor: pointer;
 }
 .main .nav-bar {
     list-style: none;

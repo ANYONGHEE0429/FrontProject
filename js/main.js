@@ -11,12 +11,20 @@ const secondWrapper = document.querySelector('.second-wrapper');
 let firstWrapperHeight;
 let secondWrapperHeight;
 
+// 창 켜질 시
+window.addEventListener('load', () => {
+    container.style.opacity = '1';
+    init();
+    firstWrapperHeight = firstWrapper.offsetHeight;
+    secondWrapperHeight = secondWrapper.offsetHeight * 2;
+})
+
 // Header가 Fade In되는 높이값을 지정
 let height = window.innerHeight;
 window.addEventListener('resize', () => {
     height = window.innerHeight;
+    init(height);
 });
-
 
 // Header에 Fade In 효과
 window.addEventListener('scroll', () => {
@@ -27,19 +35,6 @@ window.addEventListener('scroll', () => {
         header.style.opacity = "0";
     }
 });
-
-
-// 창 켜질 시 전체 요소에 Fade In 효과
-window.addEventListener('load', () => {
-    container.style.opacity = '1';
-    firstWrapperHeight = firstWrapper.offsetHeight;
-    secondWrapperHeight = secondWrapper.offsetHeight * 2;
-})
-
-window.addEventListener('resize', () => {
-    firstWrapperHeight = firstWrapper.offsetHeight;
-    secondWrapperHeight = secondWrapper.offsetHeight * 2;
-})
 
 osaka.addEventListener('click', () => { document.location.href = '../html/osaka.html' });
 kyoto.addEventListener('click', () => { document.location.href = '../html/kyoto.html' });
@@ -57,4 +52,9 @@ anchor_2.addEventListener('click', () => {
 
 function moveTo(height) {
     window.scrollTo(0, height);
+}
+
+function init(offsetHeight) {
+    firstWrapperHeight = offsetHeight;
+    secondWrapperHeight = offsetHeight * 2;
 }
