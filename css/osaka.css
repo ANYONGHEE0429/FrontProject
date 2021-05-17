@@ -16,33 +16,3 @@
         opacity: 1;
     }
 }
-
-.first-warpper {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../image/park.jpeg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    top: 0;
-    left: 0; 
-    position: relative;
-}
-.first-warpper .first-warpper-title {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    transition: 1s;
-}
-.first-warpper .first-warpper-title.show {
-    transform: translate(-50%, -100%);
-    opacity: 0;
-    transition: 1s;
-}
-.main-content {
-    width: 100vw;
-    height: 100vh;
-}
