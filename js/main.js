@@ -2,6 +2,7 @@ const container = document.querySelector('.body');
 const header = document.querySelector('.main');
 const osaka = document.querySelector('.link-btn-1');
 const kyoto = document.querySelector('.link-btn-2');
+const home = document.querySelector('.header-title');
 const anchor_1 = document.querySelector('.anchor-1');
 const anchor_2 = document.querySelector('.anchor-2');
 const firstWrapper = document.querySelector('.first-wrapper');
@@ -43,13 +44,17 @@ window.addEventListener('resize', () => {
 osaka.addEventListener('click', () => { document.location.href = '../html/osaka.html' });
 kyoto.addEventListener('click', () => { document.location.href = '../html/kyoto.html' });
 
+
+home.addEventListener('click', () => {
+    moveTo(0);
+})
 anchor_1.addEventListener('click', () => {
-    console.log("First");
-    window.scrollTo(0, firstWrapperHeight);
+    moveTo(firstWrapperHeight)
 });
-
-
 anchor_2.addEventListener('click', () => {
-    console.log("Second");
-    window.scrollTo(0, secondWrapperHeight);
+    moveTo(secondWrapperHeight);
 });
+
+function moveTo(height) {
+    window.scrollTo(0, height);
+}
