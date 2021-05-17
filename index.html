@@ -7,6 +7,7 @@
     
     <title>Travel</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -14,24 +15,47 @@
     <script defer src="./js/main.js"></script>
 
 </head>
-<body class="container">
-        <div class="container-bg"></div>
-        <div class="container-op"></div>
-        <div class="wrapper">
-            <div class="left-div main-content">
-                <div class="content">
-                    <p>大阪</p>
-                </div>
-                <img class="left-img" src="./image/a.jpeg" alt="" />
-            </div>
-            <div class="right-div main-content">
-                <div class="content">
-                    <p>京都</p>
-                </div>
-                <img class="right-img" src="./image/b.jpeg" alt="" />
-                <div class="div"></div>
-            </div>
+<body class="body">
+    
+    <!-- HEADER START -->
+    <header class="main">
+        <div class="header-title">Title</div>
+        <ul class="nav-bar">
+            <a href="./html/osaka.html"><li class="nav-bar-menu">Home</li></a>
+            <a href="#"><li class="nav-bar-menu">Content1</li></a>
+            <a href="#"><li class="nav-bar-menu">Content2</li></a>
+        </ul>
+        <div class="burger-btn">
+            <a href="#">Burger</a>
         </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- SECTION START -->
+    <div class="content-wrapper">
+        <section class="main-view-wrapper">
+            <h1 class="main-view-wrapper-main-title">Main Title</h1>
+            <div class="anchor anchor-1 move-btn">Anchor-1</div>
+            <div class="anchor anchor-2 move-btn">Anchor-2</div>
+        </section>
+    
+        <section class="first-wrapper content">
+            <div class="content-img">Content Image</div>
+            <div class="content-title-wrapper">
+                <p class="content-title">Content Title</p>
+                <div class="move-btn link-btn-1">Move</div>
+            </div>
+        </section>
+        
+        <section class="second-wrapper content">
+            <div class="content-img">Content Image</div>
+            <div class="content-title-wrapper">
+                <p class="content-title">Content Title</p>
+                <div class="move-btn link-btn-2">Move</div>
+            </div>
+        </section>
+    </div>
+    <!-- SECTION END -->
 
 </body>
 </html>
