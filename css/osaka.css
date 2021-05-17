@@ -1,8 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     animation: fadeIn 1s;
     transition: 1s;
 }
-
 
 @keyframes fadeIn {
     from {
