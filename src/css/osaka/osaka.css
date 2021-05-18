@@ -18,6 +18,8 @@
         opacity: 1;
     }
 }
+
+/* INIT START */
 .section {
     width: 100vw;
     height: 100vh;
@@ -34,3 +36,40 @@ a {
 a:focus {
     color: #000
 }
+/* INIT END */
+
+/* SECTION START */
+
+.section-1 {
+    background-image: url(../../image/main/dog.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.section-2 {
+    display: flex;
+}
+.section-2 .wrapper {
+    flex: 1;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* SECTION END */
+
+
+/* TEST START */
+.btn-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.prev,
+.next {
+    width: 60px;
+    height: 40px;
+    border: 2px solid black;
+}
+/* TEST END */
