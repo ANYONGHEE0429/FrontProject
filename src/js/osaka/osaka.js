@@ -51,6 +51,13 @@ window.addEventListener('load', () => {
     }
 });
 
+
+window.addEventListener('keydown', e => {
+    
+    if (e.keyCode == 32) { e.returnValue = false }
+
+})
+
 window.addEventListener('resize', () => {
     for (let i = 0; i < array.length; i++) {
         if (array[i].offsetTop == pageYOffset) {
@@ -61,8 +68,6 @@ window.addEventListener('resize', () => {
 });
 
 wrapper.addEventListener('wheel', e => {
-
-
     e.preventDefault();
     // 스크롤을 아래로 내림
     if (0 < e.deltaY) {
