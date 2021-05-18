@@ -1,9 +1,16 @@
-.container {
+/* INIT START */
+:root {
+    font-size: 14px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
     animation: fadeIn 1s;
     transition: 1s;
 }
-
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -11,3 +18,25 @@
         opacity: 1;
     }
 }
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: #000
+}
+a:focus {
+    color: #000
+}
+/* INIT END */
+
+/* MAIN VIEW START */
+
+/* MAIN VIEW END */
+
+/* CONTENT SECTION START */
+/* CONTENT SECTION END */
+
+/* MEDIA QUERY START */
+/* MEDIA QUERY END */
