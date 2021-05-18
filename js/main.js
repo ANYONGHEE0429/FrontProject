@@ -9,6 +9,8 @@ const secondWrapper = document.querySelector('.second-wrapper');
 
 const burgerIcon = document.querySelector('.burger-btn');
 
+let temp;
+
 let firstWrapperHeight;
 let secondWrapperHeight;
 
