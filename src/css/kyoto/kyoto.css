@@ -51,20 +51,20 @@
 
 .youtube {
   position: relative;
-  height: 700px;
+  height: 100vh;
   background-color: #333;
   overflow: hidden;
   pointer-events: none; 
 }
 .youtube .youtube__area {
-  width: 1920px;
+  width: 100vw;
   position: absolute;
   /* 16비율 */
   left: 50%;
-  margin-left: calc(1920px / -2);
+  margin-left: calc(100vw / -2);
   /* 9비율 */
   top: 50%;
-  margin-top: calc(1920px * 9 / 16 / -2);
+  margin-top: calc(100vw * 9 / 16 / -2);
   /* pointer-events: none;  */
   /* 유튜브클릭 방지 */
 }
@@ -72,7 +72,7 @@
   content: "";
   display: block;
   /* 16:9 영상 비율로 요소 크기 만들기! */
-  width: 100%;
+  width: 100vh;
   height: 0;
   padding-top: 56.25%;
 }
