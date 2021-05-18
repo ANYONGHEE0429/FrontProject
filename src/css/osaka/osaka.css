@@ -18,10 +18,15 @@
         opacity: 1;
     }
 }
-.wrapper {
+.section {
     width: 100vw;
     height: 100vh;
 }
+.section:nth-child(1) { background-color: aliceblue; }
+.section:nth-child(2) { background-color: antiquewhite; }
+.section:nth-child(3) { background-color: aqua; }
+.section:nth-child(4) { background-color: aquamarine; }
+.section:nth-child(5) { background-color: bisque; }
 a {
     text-decoration: none;
     color: #000
