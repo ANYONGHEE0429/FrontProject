@@ -1,0 +1,75 @@
+/* INIT START */
+:root {
+    font-size: 14px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    animation: fadeIn 1s;
+    transition: 1s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+/* INIT START */
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+.section:nth-child(1) { background-color: aliceblue; }
+.section:nth-child(2) { background-color: antiquewhite; }
+.section:nth-child(3) { background-color: aqua; }
+.section:nth-child(4) { background-color: aquamarine; }
+.section:nth-child(5) { background-color: bisque; }
+a {
+    text-decoration: none;
+    color: #000
+}
+a:focus {
+    color: #000
+}
+/* INIT END */
+
+/* SECTION START */
+
+.section-1 {
+    background-image: url(../../main/dog.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.section-2 {
+    display: flex;
+}
+.section-2 .wrapper {
+    flex: 1;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* SECTION END */
+
+
+/* TEST START */
+.btn-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.prev,
+.next {
+    width: 60px;
+    height: 40px;
+    border: 2px solid black;
+}
+/* TEST END */
