@@ -41,7 +41,7 @@ a:focus {
 /* SECTION START */
 
 .section-1 {
-    background-image: url(../../image/main/dog.gif);
+    background-image: url(../../main/dog.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
