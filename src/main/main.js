@@ -40,7 +40,7 @@ window.addEventListener('scroll', () => {
 });
 
 osaka.addEventListener('click', () => { document.location.href = './src/taewon/html/t-page.html' });
-kyoto.addEventListener('click', () => { document.location.href = './src/yonghee/html/kyoto.html' });
+kyoto.addEventListener('click', () => { document.location.href = './src/yonghee/html/life-in-tokyo.html' });
 
 
 anchor_1.addEventListener('click', () => {

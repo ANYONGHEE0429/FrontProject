@@ -1,0 +1,226 @@
+/* COMMON */
+.container {
+  animation: fadeIn 1s;
+  transition: 1s;
+  position: relative
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  } to {
+      opacity: 1;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5 ease
+}
+.brand {
+  box-sizing: border-box;
+  font-family: 'Popipins', sans-serif;
+}
+/* .inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+} */
+.img {
+  display: block;
+}
+
+/* BTN */
+.btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+}
+
+.btn:hover {
+  background-color: #333; 
+  color: #fff;
+
+}
+
+.youtube {
+  position: relative;
+  height: 100vh;
+  background-color: #333;
+  overflow: hidden;
+  pointer-events: none; 
+}
+.youtube .youtube__area {
+  width: 100vw;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: calc(100vw / -2);
+  /* 9비율 */
+  top: 50%;
+  margin-top: calc(100vw * 9 / 16 / -2);
+  /* pointer-events: none;  */
+  /* 유튜브클릭 방지 */
+}
+.youtube .youtube-area::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100vh;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+#player {
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* MAIN DISPLAY*/
+.main__display {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/SAKURA.jpeg");
+  background-size:cover;
+  background-attachment: fixed;
+  opacity: 0.8;
+
+}
+
+.main__display .contents-texture {
+  
+  font-size: 10rem;
+  color: rgb(190, 167, 115);
+
+}
+
+.introduction__display {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8f8ff;
+  background-image: url("../images/food.jpg");
+  background-repeat: no-repeat;
+  background-position-y: bottom ;
+}
+.section__fixed h1 {
+  font-size: 3rem;
+  
+}
+
+
+
+/* Card Section */
+.card__container {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  min-height: 100vh;
+
+}
+
+section:nth-child(3) {
+
+}
+
+section:nth-child(4) {
+
+
+}
+
+section:nth-child(5) {
+}
+
+.section__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__card .container__card {
+  margin: 6rem;
+}
+
+.section__card h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__card h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section__card .cards {
+  margin-bottom: 1rem;
+  flex-direction: row;
+}
+
+.section__card .cards {
+  background-image: url("../images/SAKURA.jpeg");
+}
+.section__card .text-card {
+  
+  margin: 2rem;
+  padding: 2rem;
+}
+
+
+/* grid Section */
+
+
+.Section__grid .bg {  
+  background: url("../images/omote.jpeg");
+  height: 8.625vw;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container__grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container__grid div{
+  
+}
+
+.container__grid div:nth-child(1){
+  grid-column: 1 / 3;
+}
+.container__grid div:nth-child(7){
+  grid-column: 2 / 4;
+}
+.container__grid div:nth-child(11){
+  grid-column: 1 / 4 ;
+}
