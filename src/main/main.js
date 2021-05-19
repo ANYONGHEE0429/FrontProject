@@ -39,8 +39,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
-osaka.addEventListener('click', () => { document.location.href = '../src/html/osaka/osaka.html' });
-kyoto.addEventListener('click', () => { document.location.href = '../src/html/kyoto/kyoto.html' });
+osaka.addEventListener('click', () => { document.location.href = './src/taewon/html/t-page.html' });
+kyoto.addEventListener('click', () => { document.location.href = './src/yonghee/html/kyoto.html' });
 
 
 anchor_1.addEventListener('click', () => {
